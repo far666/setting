@@ -1,0 +1,37 @@
+[user]
+	name = far666
+	email = nrs666666@gmail.com
+[core]
+	pager = less -r
+	editor = vim
+[color]
+        branch = auto
+        diff = auto
+        status = auto
+
+[color "branch"]
+        current = blue reverse
+        local = blue
+        remote = 022
+
+[color "diff"]
+        meta = blue bold
+        frag = magenta bold
+        old = red bold
+        new = 022 bold
+
+[color "status"]
+        added = 022
+        changed = red
+        untracked = cyan
+[http]
+	sslVerify = false
+[push]
+	default = current
+[alias]
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    ck = checkout
+    br = branch
+    st = status
+[gui]
+    spellingdictionary = none
