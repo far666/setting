@@ -22,9 +22,8 @@ alias gasux=func_gasux
 
 source ~/.git-prompt.sh
 PS1='[\u@\h \w]$(__git_ps1 "(%s)")\$ '
-alias ct='sh ~/scripts/func_create_ticket'
-alias go='sh ~/scripts/go'
-alias gom='sh ~/scripts/gom'
+alias go='sh ./go'
+alias gom='sh ./gom'
 
 #git
 alias git="SSH_ASKPASS='' git"
@@ -35,7 +34,6 @@ alias gc='git commit -m'
 alias gd='git diff'
 alias gdd='git diff HEAD'
 alias gdm='git diff master'
-#alias go='git checkout'
 alias gph='git push'
 alias gpl='git pull'
 alias gk='gitk --all'
