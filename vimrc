@@ -103,4 +103,4 @@ map <S-H> gT
 " go to next tab
 map <S-L> gt
 "hi Normal ctermbg=white
-colo pyte
+"colo pyte

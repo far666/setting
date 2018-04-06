@@ -1,0 +1,20 @@
+## tmux
+#install tmux
+yum install tmux -y
+
+# copy conf file
+cp tmux.conf ~/.tmux.conf
+
+
+## vim
+#install bundle
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+# copy config file
+cp vimrc ~/.vimrc
+
+# install plugin
+open any file and run :PluginInstall
+or exec
+vim +PluginInstall +qall
+more infomation: https://blog.gtwang.org/linux/vundle-vim-bundle-plugin-manager/
