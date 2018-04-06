@@ -14,7 +14,16 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 cp vimrc ~/.vimrc
 
 # install plugin
-open any file and run :PluginInstall
+open any file and run 
+:PluginInstall
 or exec
 vim +PluginInstall +qall
+
 more infomation: https://blog.gtwang.org/linux/vundle-vim-bundle-plugin-manager/
+
+## bashrc
+# copy config file
+cp git-prompt.sh ~/.git-prompt.sh
+cp bashrc ~/.bashrc
+#reload config
+source ~/.bashrc
