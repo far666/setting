@@ -21,7 +21,8 @@ func_gasux()
 alias gasux=func_gasux
 
 source ~/.git-prompt.sh
-PS1='[\u@\h \w]$(__git_ps1 "(%s)")\$ '
+#PS1='[\u@\h \w]$(__git_ps1 "(%s)")\$ '
+PS1='\[\033[104m\]\u@ \033[49m \[\033[32m\]\w\[\033[33m\] $(__git_ps1 "(%s)")\[\033[00m\] $'
 alias go='sh ./go'
 alias gom='sh ./gom'
 
