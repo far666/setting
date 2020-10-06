@@ -27,3 +27,9 @@ cp git-prompt.sh ~/.git-prompt.sh
 cp bashrc ~/.bashrc
 #reload config
 source ~/.bashrc
+
+## iterm2 setting
+open iterm2
+find Preferences > General > Preferences
+load file `com.googlecode.iterm2.plist`
+
