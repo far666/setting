@@ -55,6 +55,14 @@ Coc Plugin Install
 :CocInstall coc-tsserver coc-phpls coc-phpactor coc-php-cs-fixer coc-pairs coc-json
 ```
 
+and what I think is useful and important
+```
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+```
+
 Fzf config
 ```
 " new tab for enter
@@ -65,7 +73,6 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
  
 ```
-
 
 ## Reference
 https://thomasventurini.com/articles/install-neovim-05-in-ubuntu/
