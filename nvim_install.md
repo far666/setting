@@ -61,6 +61,10 @@ and what I think is useful and important
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+                              
+ " or move one char everytime, I think is useful when select parameter in quotes
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() . "\<C-o>a"
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"                    
 ```
 
 Fzf config
